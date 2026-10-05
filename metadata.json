@@ -1,0 +1,6 @@
+{
+  "name": "PaperCast AI",
+  "description": "PaperCast AI transforms academic research papers into engaging, studio-quality two-speaker podcasts with AI analysis and factual evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

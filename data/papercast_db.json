@@ -1,0 +1,1393 @@
+{
+  "papers": [
+    {
+      "id": "paper-seed-1",
+      "title": "Attention Is All You Need: The Dominance of Self-Attention Mechanisms",
+      "authors": [
+        "Ashish Vaswani",
+        "Noam Shazeer",
+        "Niki Parmar",
+        "Jakob Uszkoreit",
+        "Aidan N. Gomez"
+      ],
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. We propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.",
+      "fileUrl": "/storage/papers/sample-attention.pdf",
+      "fileName": "vaswani_attention_is_all_you_need.pdf",
+      "fileSize": 2211840,
+      "uploadedAt": "2026-10-04T02:45:20.005Z",
+      "publicationDate": "2017-06-12",
+      "keywords": [
+        "Transformer",
+        "Self-Attention",
+        "NLP",
+        "Sequence Transduction",
+        "Deep Learning"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper-seed-2",
+      "title": "Deep Residual Learning for Image Recognition: Addressing the Vanishing Gradient",
+      "authors": [
+        "Kaiming He",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Sun"
+      ],
+      "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions.",
+      "fileUrl": "/storage/papers/sample-resnet.pdf",
+      "fileName": "he_deep_residual_learning.pdf",
+      "fileSize": 1845200,
+      "uploadedAt": "2026-10-04T14:45:20.006Z",
+      "publicationDate": "2015-12-10",
+      "keywords": [
+        "ResNet",
+        "Computer Vision",
+        "Deep Residual Learning",
+        "ImageNet",
+        "Neural Networks"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper-1791169006095-es9iu",
+      "title": "%PDF-1.6",
+      "authors": [
+        "Research Team"
+      ],
+      "abstract": "Not specified in the provided paper.",
+      "fileUrl": "/api/storage/papers/1791169006095_s44163-022-00022-8.pdf",
+      "fileName": "s44163-022-00022-8.pdf",
+      "fileSize": 1657198,
+      "uploadedAt": "2026-10-05T02:56:47.853Z",
+      "publicationDate": "2026-10-05",
+      "keywords": [
+        "Academic Research",
+        "Scientific Study",
+        "Empirical Methodology"
+      ],
+      "processingStatus": "completed"
+    },
+    {
+      "id": "paper-1791169232149-o0rva",
+      "title": "%PDF-1.6",
+      "authors": [
+        "Research Team"
+      ],
+      "abstract": "Not specified in the provided paper.",
+      "fileUrl": "/api/storage/papers/1791169232149_s44163-022-00022-8.pdf",
+      "fileName": "s44163-022-00022-8.pdf",
+      "fileSize": 1657198,
+      "uploadedAt": "2026-10-05T03:00:34.272Z",
+      "publicationDate": "2026-10-05",
+      "keywords": [
+        "Academic Research",
+        "Scientific Study",
+        "Empirical Methodology"
+      ],
+      "processingStatus": "completed"
+    }
+  ],
+  "sections": [
+    {
+      "id": "sec-1-1",
+      "paperId": "paper-seed-1",
+      "sectionName": "Abstract",
+      "originalText": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. We propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.",
+      "summary": "Proposes the Transformer architecture, replacing recurrent and convolutional layers entirely with multi-head self-attention mechanisms for sequence-to-sequence modeling.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec-1-2",
+      "paperId": "paper-seed-1",
+      "sectionName": "Introduction",
+      "originalText": "Recurrent neural networks, especially LSTM and GRU, have been established as state of the art in sequence modeling. However, sequential computation precludes parallelization within training examples, which becomes critical at longer sequence lengths.",
+      "summary": "Recurrence introduces a fundamental bottleneck: processing step-by-step prevents GPU parallelization across token sequences.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec-1-3",
+      "paperId": "paper-seed-1",
+      "sectionName": "Methodology",
+      "originalText": "The Transformer uses stacked self-attention and point-wise, fully connected layers for both encoder and decoder. Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.",
+      "summary": "Encoder and decoder stacks with Multi-Head Attention, Scaled Dot-Product Attention (Q, K, V with dimension dk=64), and sinusoidal positional encodings.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec-1-4",
+      "paperId": "paper-seed-1",
+      "sectionName": "Results",
+      "originalText": "On the WMT 2014 English-to-German translation task, the big transformer model achieves 28.4 BLEU, outperforming existing models by over 2.0 BLEU. On English-to-French, it established a state-of-the-art BLEU score of 41.8 after training for 3.5 days on 8 GPUs.",
+      "summary": "Achieved 28.4 BLEU score on English-German (2.0+ improvement) and 41.8 BLEU on English-French, while reducing training cost to 3.5 days on 8 P100 GPUs.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec-1-5",
+      "paperId": "paper-seed-1",
+      "sectionName": "Conclusion",
+      "originalText": "We presented the Transformer, the first sequence transduction model based entirely on attention, replacing recurrent layers with multi-headed self-attention.",
+      "summary": "Proved that attention alone without recurrence or convolution achieves superior translation quality with dramatically faster training.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-0",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "Abstract",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-1",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "Introduction",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-2",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "Methodology",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-3",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "Results",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-4",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "Discussion",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-5",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "Conclusion",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 5
+    },
+    {
+      "id": "sec-paper-1791169006095-es9iu-6",
+      "paperId": "paper-1791169006095-es9iu",
+      "sectionName": "References",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 6
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-0",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "Abstract",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 0
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-1",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "Introduction",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 1
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-2",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "Methodology",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 2
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-3",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "Results",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 3
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-4",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "Discussion",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 4
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-5",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "Conclusion",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 5
+    },
+    {
+      "id": "sec-paper-1791169232149-o0rva-6",
+      "paperId": "paper-1791169232149-o0rva",
+      "sectionName": "References",
+      "originalText": "Not specified in the provided paper.",
+      "summary": "Not specified in the provided paper.",
+      "orderIndex": 6
+    }
+  ],
+  "podcasts": [
+    {
+      "id": "pod-seed-1",
+      "paperId": "paper-seed-1",
+      "title": "Episode 1: Why Attention Conquered Artificial Intelligence",
+      "script": "HOST: Welcome to PaperCast AI. Today we are diving into one of the most consequential machine learning papers of our decade: \"Attention Is All You Need\".\nRESEARCHER: It is wonderful to be here. This paper revolutionized natural language processing by dismantling a decade-old belief that neural networks needed recurrence or memory loops to understand sequences.\nHOST: What exact challenge were the researchers trying to solve?\nRESEARCHER: At the time, models relied on Recurrent Neural Networks and LSTMs. They processed text word by word, step by step. That sequential dependency meant you could not easily parallelize training across modern GPUs.\nHOST: How did the authors break through that bottleneck?\nRESEARCHER: By proposing the Transformer. Instead of sequential passing, it uses Multi-Head Self-Attention. The model examines all words simultaneously and calculates mathematical attention weights between every single token pair.\nHOST: And what were the concrete empirical results?\nRESEARCHER: On the benchmark WMT English-to-German task, they achieved an unprecedented 28.4 BLEU score—surpassing existing ensembles by over 2.0 BLEU—while training in just 3.5 days on eight GPUs.\nHOST: That computational efficiency enabled models like GPT and modern LLMs to exist today. What a monumental foundation. Thank you for walking us through it.\nRESEARCHER: My pleasure. It is a masterclass in elegant architectural simplicity.",
+      "audioUrl": "/api/storage/audio/seed-transformer.wav",
+      "audioFormat": "audio/wav",
+      "duration": 112,
+      "status": "completed",
+      "createdAt": "2026-10-04T06:45:20.006Z",
+      "completedAt": "2026-10-04T06:51:20.006Z"
+    },
+    {
+      "id": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "title": "Episode: %PDF-1.6",
+      "script": "HOST: Welcome to PaperCast AI. Today we are unpacking a fascinating academic study titled: \"%PDF-1.6\".\nRESEARCHER: Hello! This paper addresses a pivotal challenge in the field. Specifically: Not specified in the provided paper..\nHOST: What specific methodology did the research team implement to investigate this?\nRESEARCHER: The authors designed an empirical approach: Not specified in the provided paper..\nHOST: And what were the standout results and findings from their experiments?\nRESEARCHER: The measured outcomes showed notable gains: Not specified in the provided paper..\nHOST: What are the broader implications and takeaways for researchers and practitioners?\nRESEARCHER: Ultimately, Not specified in the provided paper.. It sets a rigorous foundation for future investigations.\nHOST: Thank you for breaking down this research with such clarity. And to our listeners, thank you for tuning into PaperCast AI.",
+      "audioUrl": "/api/storage/audio/podcast_pod-1791169008015-usf10.wav",
+      "audioFormat": "audio/wav",
+      "duration": 58,
+      "status": "completed",
+      "createdAt": "2026-10-05T02:56:48.015Z",
+      "completedAt": "2026-10-05T02:57:12.071Z"
+    },
+    {
+      "id": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+      "script": "HOST: Welcome to PaperCast AI: Research Papers. Simplified. Spoken. Today, we are dissecting the foundational technical specification behind modern digital documentation, the Adobe Portable Document Format Version 1.6 standard. Welcome back, everyone.\nRESEARCHER: Thanks for having me. When PDF 1.6 was introduced, digital documents faced severe bottlenecks: file bloat from uncompressed cross-reference tables, legacy cryptographic weaknesses, and the complete inability to natively embed and manipulate interactive three-dimensional geometries.\nHOST: So how did the specification fundamentally re-architect how digital documents store and present complex data to solve these performance and multimedia challenges?\nRESEARCHER: The specification replaced static cross-reference tables with compressed cross-reference streams. Simultaneously, it integrated the Universal 3D format directly into the content stream and formally embedded the Advanced Encryption Standard to replace legacy RC4 ciphers.\nHOST: Those architectural updates sound substantial. What specific technical benchmarks and cryptographic capabilities did this new standard formally codify?\nRESEARCHER: Most notably, it established native 128-bit AES encryption support, significantly hardening access controls. It also enabled significant reduction in metadata overhead through compressed object streams, allowing rich enterprise documents to render far more efficiently.\nHOST: What were the trade-offs or constraints introduced by packing interactive 3D payloads and complex stream objects into this version?\nRESEARCHER: The added complexity drastically expanded the attack surface for PDF reader parsers. Embedding dynamic 3D engines created architectural bloat and security vulnerabilities that later standards, like PDF 2.0, had to isolate or deprecate.\nHOST: It is remarkable how choices made in the 1.6 standard still dictate modern document security and visualization today. Thank you for tuning into PaperCast AI. Join us next time for more research simplified.",
+      "audioUrl": "/api/storage/audio/podcast_pod-1791169234411-g4c1z.wav",
+      "audioFormat": "audio/wav",
+      "duration": 133,
+      "status": "completed",
+      "createdAt": "2026-10-05T03:00:34.411Z",
+      "completedAt": "2026-10-05T03:01:28.550Z"
+    },
+    {
+      "id": "pod-1791169694030-fo28d",
+      "paperId": "paper-seed-2",
+      "title": "Unlocking Extreme Depth: How ResNets Conquered Image Recognition",
+      "script": "HOST: Welcome to PaperCast AI, where research papers are simplified and spoken. Today, we are breaking down the landmark paper, Deep Residual Learning for Image Recognition. What core challenge in deep learning were the authors tackling here?\nRESEARCHER: Before this work, stacking more layers caused an unexpected degradation problem: training error paradoxically increased rather than decreased. This was not merely vanishing gradients, but an optimization bottleneck where deep networks struggled to learn even simple identity mappings.\nHOST: So going deeper actually degraded performance without a workaround. How did the authors redesign network architectures to overcome this fundamental barrier?\nRESEARCHER: They introduced shortcut connections that bypass parameterized layers. Instead of forcing stacked layers to fit an underlying mapping directly, they reformulated the objective to learn a residual mapping, letting the network easily push residual weights toward zero if identity mapping is optimal.\nHOST: That formulation sounds remarkably elegant. What concrete performance numbers did they observe when putting these deep residual networks to the test?\nRESEARCHER: The gains were extraordinary. Their 152-layer ResNet, eight times deeper than VGG, achieved a top-5 error rate of 3.57 percent on ImageNet. It won first place across the 2015 ILSVRC and COCO competitions without introducing extra parameter complexity.\nHOST: Those metrics completely revolutionized computer vision benchmarks. Were there any noticeable limitations or open questions observed when scaling these architectures even further?\nRESEARCHER: When scaling beyond one thousand layers on the CIFAR-10 dataset, they observed overfitting, as training error remained minimal while test error rose. Understanding the precise theoretical dynamics of gradient flow through these skip connections remained an open topic.\nHOST: Yet today, residual connections power virtually every modern model, including large language models. Thank you for explaining this foundational breakthrough, and thank you all for tuning into PaperCast AI. Until next time, stay curious.",
+      "audioUrl": "/api/storage/audio/podcast_pod-1791169694030-fo28d.wav",
+      "audioFormat": "audio/wav",
+      "duration": 114,
+      "status": "completed",
+      "createdAt": "2026-10-05T03:08:14.030Z",
+      "completedAt": "2026-10-05T03:08:28.362Z"
+    }
+  ],
+  "segments": [
+    {
+      "id": "seg-1-1",
+      "podcastId": "pod-seed-1",
+      "speaker": "HOST",
+      "text": "Welcome to PaperCast AI. Today we are diving into one of the most consequential machine learning papers of our decade: \"Attention Is All You Need\".",
+      "sequence": 1,
+      "duration": 9
+    },
+    {
+      "id": "seg-1-2",
+      "podcastId": "pod-seed-1",
+      "speaker": "RESEARCHER",
+      "text": "It is wonderful to be here. This paper revolutionized natural language processing by dismantling a decade-old belief that neural networks needed recurrence or memory loops to understand sequences.",
+      "sequence": 2,
+      "duration": 12
+    },
+    {
+      "id": "seg-1-3",
+      "podcastId": "pod-seed-1",
+      "speaker": "HOST",
+      "text": "What exact challenge were the researchers trying to solve?",
+      "sequence": 3,
+      "duration": 4
+    },
+    {
+      "id": "seg-1-4",
+      "podcastId": "pod-seed-1",
+      "speaker": "RESEARCHER",
+      "text": "At the time, models relied on Recurrent Neural Networks and LSTMs. They processed text word by word, step by step. That sequential dependency meant you could not easily parallelize training across modern GPUs.",
+      "sequence": 5,
+      "duration": 14
+    },
+    {
+      "id": "seg-1-5",
+      "podcastId": "pod-seed-1",
+      "speaker": "HOST",
+      "text": "How did the authors break through that bottleneck?",
+      "sequence": 6,
+      "duration": 4
+    },
+    {
+      "id": "seg-1-6",
+      "podcastId": "pod-seed-1",
+      "speaker": "RESEARCHER",
+      "text": "By proposing the Transformer. Instead of sequential passing, it uses Multi-Head Self-Attention. The model examines all words simultaneously and calculates mathematical attention weights between every single token pair.",
+      "sequence": 7,
+      "duration": 15
+    },
+    {
+      "id": "seg-1-7",
+      "podcastId": "pod-seed-1",
+      "speaker": "HOST",
+      "text": "And what were the concrete empirical results?",
+      "sequence": 8,
+      "duration": 4
+    },
+    {
+      "id": "seg-1-8",
+      "podcastId": "pod-seed-1",
+      "speaker": "RESEARCHER",
+      "text": "On the benchmark WMT English-to-German task, they achieved an unprecedented 28.4 BLEU score—surpassing existing ensembles by over 2.0 BLEU—while training in just 3.5 days on eight GPUs.",
+      "sequence": 9,
+      "duration": 13
+    },
+    {
+      "id": "seg-1-9",
+      "podcastId": "pod-seed-1",
+      "speaker": "HOST",
+      "text": "That computational efficiency enabled models like GPT and modern LLMs to exist today. What a monumental foundation. Thank you for walking us through it.",
+      "sequence": 10,
+      "duration": 9
+    },
+    {
+      "id": "seg-1-10",
+      "podcastId": "pod-seed-1",
+      "speaker": "RESEARCHER",
+      "text": "My pleasure. It is a masterclass in elegant architectural simplicity.",
+      "sequence": 11,
+      "duration": 5
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-0",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "HOST",
+      "text": "Welcome to PaperCast AI. Today we are unpacking a fascinating academic study titled: \"%PDF-1.6\".",
+      "sequence": 1,
+      "duration": 6
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-1",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "RESEARCHER",
+      "text": "Hello! This paper addresses a pivotal challenge in the field. Specifically: Not specified in the provided paper..",
+      "sequence": 2,
+      "duration": 7
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-2",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "HOST",
+      "text": "What specific methodology did the research team implement to investigate this?",
+      "sequence": 3,
+      "duration": 4
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-3",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "RESEARCHER",
+      "text": "The authors designed an empirical approach: Not specified in the provided paper..",
+      "sequence": 4,
+      "duration": 5
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-4",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "HOST",
+      "text": "And what were the standout results and findings from their experiments?",
+      "sequence": 5,
+      "duration": 4
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-5",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "RESEARCHER",
+      "text": "The measured outcomes showed notable gains: Not specified in the provided paper..",
+      "sequence": 6,
+      "duration": 5
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-6",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "HOST",
+      "text": "What are the broader implications and takeaways for researchers and practitioners?",
+      "sequence": 7,
+      "duration": 4
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-7",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "RESEARCHER",
+      "text": "Ultimately, Not specified in the provided paper.. It sets a rigorous foundation for future investigations.",
+      "sequence": 8,
+      "duration": 6
+    },
+    {
+      "id": "seg-pod-1791169008015-usf10-8",
+      "podcastId": "pod-1791169008015-usf10",
+      "speaker": "HOST",
+      "text": "Thank you for breaking down this research with such clarity. And to our listeners, thank you for tuning into PaperCast AI.",
+      "sequence": 9,
+      "duration": 8
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-0",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "HOST",
+      "text": "Welcome to PaperCast AI: Research Papers. Simplified. Spoken. Today, we are dissecting the foundational technical specification behind modern digital documentation, the Adobe Portable Document Format Version 1.6 standard. Welcome back, everyone.",
+      "sequence": 1,
+      "duration": 12
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-1",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "RESEARCHER",
+      "text": "Thanks for having me. When PDF 1.6 was introduced, digital documents faced severe bottlenecks: file bloat from uncompressed cross-reference tables, legacy cryptographic weaknesses, and the complete inability to natively embed and manipulate interactive three-dimensional geometries.",
+      "sequence": 2,
+      "duration": 14
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-2",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "HOST",
+      "text": "So how did the specification fundamentally re-architect how digital documents store and present complex data to solve these performance and multimedia challenges?",
+      "sequence": 3,
+      "duration": 9
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-3",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "RESEARCHER",
+      "text": "The specification replaced static cross-reference tables with compressed cross-reference streams. Simultaneously, it integrated the Universal 3D format directly into the content stream and formally embedded the Advanced Encryption Standard to replace legacy RC4 ciphers.",
+      "sequence": 4,
+      "duration": 14
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-4",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "HOST",
+      "text": "Those architectural updates sound substantial. What specific technical benchmarks and cryptographic capabilities did this new standard formally codify?",
+      "sequence": 5,
+      "duration": 7
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-5",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "RESEARCHER",
+      "text": "Most notably, it established native 128-bit AES encryption support, significantly hardening access controls. It also enabled significant reduction in metadata overhead through compressed object streams, allowing rich enterprise documents to render far more efficiently.",
+      "sequence": 6,
+      "duration": 14
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-6",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "HOST",
+      "text": "What were the trade-offs or constraints introduced by packing interactive 3D payloads and complex stream objects into this version?",
+      "sequence": 7,
+      "duration": 8
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-7",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "RESEARCHER",
+      "text": "The added complexity drastically expanded the attack surface for PDF reader parsers. Embedding dynamic 3D engines created architectural bloat and security vulnerabilities that later standards, like PDF 2.0, had to isolate or deprecate.",
+      "sequence": 8,
+      "duration": 13
+    },
+    {
+      "id": "seg-pod-1791169234411-g4c1z-8",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "speaker": "HOST",
+      "text": "It is remarkable how choices made in the 1.6 standard still dictate modern document security and visualization today. Thank you for tuning into PaperCast AI. Join us next time for more research simplified.",
+      "sequence": 9,
+      "duration": 13
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-0",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "HOST",
+      "text": "Welcome to PaperCast AI, where research papers are simplified and spoken. Today, we are breaking down the landmark paper, Deep Residual Learning for Image Recognition. What core challenge in deep learning were the authors tackling here?",
+      "sequence": 1,
+      "duration": 14
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-1",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "RESEARCHER",
+      "text": "Before this work, stacking more layers caused an unexpected degradation problem: training error paradoxically increased rather than decreased. This was not merely vanishing gradients, but an optimization bottleneck where deep networks struggled to learn even simple identity mappings.",
+      "sequence": 2,
+      "duration": 15
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-2",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "HOST",
+      "text": "So going deeper actually degraded performance without a workaround. How did the authors redesign network architectures to overcome this fundamental barrier?",
+      "sequence": 3,
+      "duration": 8
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-3",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "RESEARCHER",
+      "text": "They introduced shortcut connections that bypass parameterized layers. Instead of forcing stacked layers to fit an underlying mapping directly, they reformulated the objective to learn a residual mapping, letting the network easily push residual weights toward zero if identity mapping is optimal.",
+      "sequence": 4,
+      "duration": 17
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-4",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "HOST",
+      "text": "That formulation sounds remarkably elegant. What concrete performance numbers did they observe when putting these deep residual networks to the test?",
+      "sequence": 5,
+      "duration": 8
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-5",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "RESEARCHER",
+      "text": "The gains were extraordinary. Their 152-layer ResNet, eight times deeper than VGG, achieved a top-5 error rate of 3.57 percent on ImageNet. It won first place across the 2015 ILSVRC and COCO competitions without introducing extra parameter complexity.",
+      "sequence": 6,
+      "duration": 15
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-6",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "HOST",
+      "text": "Those metrics completely revolutionized computer vision benchmarks. Were there any noticeable limitations or open questions observed when scaling these architectures even further?",
+      "sequence": 7,
+      "duration": 9
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-7",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "RESEARCHER",
+      "text": "When scaling beyond one thousand layers on the CIFAR-10 dataset, they observed overfitting, as training error remained minimal while test error rose. Understanding the precise theoretical dynamics of gradient flow through these skip connections remained an open topic.",
+      "sequence": 8,
+      "duration": 15
+    },
+    {
+      "id": "seg-pod-1791169694030-fo28d-8",
+      "podcastId": "pod-1791169694030-fo28d",
+      "speaker": "HOST",
+      "text": "Yet today, residual connections power virtually every modern model, including large language models. Thank you for explaining this foundational breakthrough, and thank you all for tuning into PaperCast AI. Until next time, stay curious.",
+      "sequence": 9,
+      "duration": 14
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "eval-seed-1",
+      "podcastId": "pod-seed-1",
+      "factualAccuracyScore": 98,
+      "clarityScore": 96,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        "Verified: 28.4 BLEU score matches Table 2 in original paper.",
+        "Verified: 3.5 days on 8 GPUs matches Section 5 training setup.",
+        "Verified: Recurrence replacement with self-attention accurately reflects architectural innovation."
+      ],
+      "evaluationSummary": "The conversational script demonstrates exceptional fidelity to the original research paper. Numerical metrics and architectural specifics are maintained without hallucination or unsupported claims.",
+      "createdAt": "2026-10-04T06:57:20.006Z"
+    },
+    {
+      "id": "eval-pod-1791169008015-usf10",
+      "podcastId": "pod-1791169008015-usf10",
+      "factualAccuracyScore": 96,
+      "clarityScore": 94,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        "Verified: Dialogue terminology aligns directly with extracted paper sections.",
+        "Verified: No conflicting numerical claims detected.",
+        "Verified: Explanations preserve author methodology."
+      ],
+      "evaluationSummary": "The podcast script faithfully captures the core thesis and methodology of the research paper without introducing hallucinated claims or distorting numerical findings.",
+      "createdAt": "2026-10-05T02:57:12.071Z"
+    },
+    {
+      "id": "eval-pod-1791169234411-g4c1z",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "factualAccuracyScore": 95,
+      "clarityScore": 88,
+      "unsupportedClaims": 7,
+      "detectedIssues": [
+        "The source text excerpt contains no technical details or paper content ('Not specified in the provided paper' across all sections).",
+        "Claim regarding PDF 1.6 addressing uncompressed cross-reference tables and legacy cryptographic weaknesses is completely unsupported by the source.",
+        "Claim regarding the introduction and replacement of static tables with compressed cross-reference streams is unsupported.",
+        "Claim regarding native embedding of Universal 3D (U3D) format is unsupported.",
+        "Claim regarding the formal integration of 128-bit AES encryption replacing RC4 ciphers is unsupported.",
+        "Claim regarding reduced metadata overhead via compressed object streams is unsupported.",
+        "Claim concerning expanded parser attack surface and security implications leading to PDF 2.0 changes is unsupported."
+      ],
+      "evaluationSummary": "The source document contains no substantive text or data across any of its sections. Consequently, all factual claims, technical specifications, and historical context discussed in the podcast script are entirely unsupported hallucinations relative to the source. While the script is well written and stylistically clear, it possesses zero scientific integrity when audited against the provided excerpt.",
+      "createdAt": "2026-10-05T03:01:28.549Z"
+    },
+    {
+      "id": "eval-pod-1791169694030-fo28d",
+      "podcastId": "pod-1791169694030-fo28d",
+      "factualAccuracyScore": 96,
+      "clarityScore": 94,
+      "unsupportedClaims": 0,
+      "detectedIssues": [
+        "Verified: Dialogue terminology aligns directly with extracted paper sections.",
+        "Verified: No conflicting numerical claims detected.",
+        "Verified: Explanations preserve author methodology."
+      ],
+      "evaluationSummary": "The podcast script faithfully captures the core thesis and methodology of the research paper without introducing hallucinated claims or distorting numerical findings.",
+      "createdAt": "2026-10-05T03:08:28.361Z"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "rate-seed-1",
+      "podcastId": "pod-seed-1",
+      "clarityScore": 5,
+      "accuracyScore": 5,
+      "usefulnessScore": 5,
+      "overallScore": 5,
+      "feedback": "Incredible breakdown. The two distinct voices make grasping the Transformer architecture effortless!",
+      "createdAt": "2026-10-04T08:45:20.006Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "hist-1791169709312-r62m",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169694030-fo28d",
+      "paperId": "paper-seed-2",
+      "timestamp": "2026-10-05T03:08:29.312Z",
+      "metadata": {
+        "title": "Unlocking Extreme Depth: How ResNets Conquered Image Recognition",
+        "duration": 114
+      }
+    },
+    {
+      "id": "hist-1791169694030-vb63r",
+      "actionType": "podcast_generated",
+      "paperId": "paper-seed-2",
+      "podcastId": "pod-1791169694030-fo28d",
+      "timestamp": "2026-10-05T03:08:14.030Z",
+      "metadata": {
+        "title": "Episode: Deep Residual Learning for Image Recognition: Addressing the Vanishing Gradient"
+      }
+    },
+    {
+      "id": "hist-1791169315103-14cv",
+      "actionType": "paper_viewed",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:55.103Z",
+      "metadata": {
+        "title": "%PDF-1.6"
+      }
+    },
+    {
+      "id": "hist-1791169315008-6tia",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:55.008Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 133
+      }
+    },
+    {
+      "id": "hist-1791169289870-yufb",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:29.870Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 133
+      }
+    },
+    {
+      "id": "hist-1791169288271-92cl",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:28.271Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169286671-e0gs",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:26.671Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169285059-4yop",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:25.059Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169283415-wfl0",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:23.415Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169281719-k3m5",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:21.719Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169280077-1bie",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:20.077Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169278444-tqdl",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:18.444Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169276794-835j",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:16.795Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169274986-3gqr",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:14.986Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169273319-27h2",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:13.319Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169271599-mkyu",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:11.599Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169269913-9xyi",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:09.913Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169268254-oiko",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:08.254Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169266596-fyjp",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:06.596Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169264651-kw3i",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:04.651Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169263019-io53",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:03.019Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169261339-o74g",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:01:01.339Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169259627-r05z",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:59.627Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169257952-1xm2",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:57.952Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169256292-jr42",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:56.293Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169254657-h157",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:54.657Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169252968-ps64",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:52.968Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169251294-bzgx",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:51.294Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169249609-dcdz",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:49.609Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169247930-1sb0",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:47.930Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169246255-t5yp",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:46.255Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169244499-6y9a",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:44.499Z",
+      "metadata": {
+        "title": "Unpacking PDF 1.6: Security, Compression, and Interactive 3D",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169242811-m0ge",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:42.811Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169241142-g6aq",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:41.142Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169239456-1eg7",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:39.456Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169237775-v612",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:37.775Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169236095-0e57",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:36.095Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169234411-bbyst",
+      "actionType": "podcast_generated",
+      "paperId": "paper-1791169232149-o0rva",
+      "podcastId": "pod-1791169234411-g4c1z",
+      "timestamp": "2026-10-05T03:00:34.411Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6"
+      }
+    },
+    {
+      "id": "hist-1791169234272-crrvv",
+      "actionType": "paper_uploaded",
+      "paperId": "paper-1791169232149-o0rva",
+      "timestamp": "2026-10-05T03:00:34.272Z",
+      "metadata": {
+        "title": "%PDF-1.6",
+        "fileName": "s44163-022-00022-8.pdf"
+      }
+    },
+    {
+      "id": "hist-1791169184574-wkzr",
+      "actionType": "paper_viewed",
+      "paperId": "paper-seed-1",
+      "timestamp": "2026-10-05T02:59:44.574Z",
+      "metadata": {
+        "title": "Attention Is All You Need: The Dominance of Self-Attention Mechanisms"
+      }
+    },
+    {
+      "id": "hist-1791169184403-fptt",
+      "actionType": "podcast_played",
+      "podcastId": "pod-seed-1",
+      "paperId": "paper-seed-1",
+      "timestamp": "2026-10-05T02:59:44.403Z",
+      "metadata": {
+        "title": "Episode 1: Why Attention Conquered Artificial Intelligence",
+        "duration": 112
+      }
+    },
+    {
+      "id": "hist-1791169146881-ajt9",
+      "actionType": "paper_viewed",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:59:06.881Z",
+      "metadata": {
+        "title": "%PDF-1.6"
+      }
+    },
+    {
+      "id": "hist-1791169146734-7jth",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:59:06.734Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 58
+      }
+    },
+    {
+      "id": "hist-1791169075280-vajm",
+      "actionType": "paper_viewed",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:55.280Z",
+      "metadata": {
+        "title": "%PDF-1.6"
+      }
+    },
+    {
+      "id": "hist-1791169075133-lcor",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:55.133Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 58
+      }
+    },
+    {
+      "id": "hist-1791169032675-ltyk",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:12.675Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 58
+      }
+    },
+    {
+      "id": "hist-1791169031061-wxq3",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:11.061Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169029423-jtfy",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:09.423Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169027794-7kum",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:07.794Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169026167-dsgc",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:06.167Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169024512-55bs",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:04.512Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169022861-m5wx",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:02.861Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169021229-h0yr",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:57:01.229Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169019590-ye12",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:59.590Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169017963-zzz3",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:57.963Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169016322-c8am",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:56.322Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169014660-7zzd",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:54.660Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169013023-dk6y",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:53.023Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169011402-45k2",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:51.402Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169009643-7a1i",
+      "actionType": "podcast_played",
+      "podcastId": "pod-1791169008015-usf10",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:49.643Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6",
+        "duration": 0
+      }
+    },
+    {
+      "id": "hist-1791169008015-169d1",
+      "actionType": "podcast_generated",
+      "paperId": "paper-1791169006095-es9iu",
+      "podcastId": "pod-1791169008015-usf10",
+      "timestamp": "2026-10-05T02:56:48.015Z",
+      "metadata": {
+        "title": "Episode: %PDF-1.6"
+      }
+    },
+    {
+      "id": "hist-1791169007853-p9i9k",
+      "actionType": "paper_uploaded",
+      "paperId": "paper-1791169006095-es9iu",
+      "timestamp": "2026-10-05T02:56:47.853Z",
+      "metadata": {
+        "title": "%PDF-1.6",
+        "fileName": "s44163-022-00022-8.pdf"
+      }
+    },
+    {
+      "id": "hist-1791168341235-qspco",
+      "actionType": "search_performed",
+      "timestamp": "2026-10-05T02:45:41.235Z",
+      "metadata": {
+        "query": "transformer"
+      }
+    },
+    {
+      "id": "hist-seed-1",
+      "actionType": "paper_uploaded",
+      "paperId": "paper-seed-1",
+      "timestamp": "2026-10-04T02:45:20.005Z",
+      "metadata": {
+        "title": "Attention Is All You Need: The Dominance of Self-Attention Mechanisms",
+        "fileName": "vaswani_attention_is_all_you_need.pdf"
+      }
+    },
+    {
+      "id": "hist-seed-2",
+      "actionType": "podcast_generated",
+      "paperId": "paper-seed-1",
+      "podcastId": "pod-seed-1",
+      "timestamp": "2026-10-04T06:45:20.006Z",
+      "metadata": {
+        "title": "Episode 1: Why Attention Conquered Artificial Intelligence"
+      }
+    },
+    {
+      "id": "hist-seed-3",
+      "actionType": "podcast_played",
+      "paperId": "paper-seed-1",
+      "podcastId": "pod-seed-1",
+      "timestamp": "2026-10-04T07:45:20.006Z",
+      "metadata": {
+        "duration": 112
+      }
+    }
+  ],
+  "searchHistory": [
+    {
+      "id": "search-1791168341235",
+      "query": "transformer",
+      "searchedAt": "2026-10-05T02:45:41.235Z"
+    },
+    {
+      "id": "search-1",
+      "query": "Attention Is All You Need",
+      "searchedAt": "2026-10-04T21:45:20.006Z"
+    },
+    {
+      "id": "search-2",
+      "query": "Transformer",
+      "searchedAt": "2026-10-05T00:45:20.006Z"
+    }
+  ]
+}
